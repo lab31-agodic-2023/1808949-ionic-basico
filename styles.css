@@ -1,0 +1,17 @@
+ion-col {
+    background-color: blue;
+    border: 1px solid black;
+}
+
+ion-grid{
+    height: 100%;
+    text-align: center;
+}
+
+ion-content{
+    height: 100%;
+}
+
+ion-row {
+    height: 25%;
+}
