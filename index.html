@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js">  </script>
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script src="js.js"></script>
+    
 </head>
 <body>
-    <div class="inputs">
-        <div class="usuario">
-            <h1>Usuario: </h1>
-            <input type="text" id="u_in">
-        </div>
+    <ion-header>
+        <ion-toolbar>
+          <ion-title>Presupuesto</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Content</h1>
+        <ion-list>
+            <ion-item>
+              <ion-input label="Tipo de gasto: " id="gasto"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-input label="Monto: " id="monto"></ion-input>
+            </ion-item>
+          
+           
+          </ion-list>
 
-        <div class="password">
-            <h1>Password: </h1>
-            <input type="text" id="p_in">
-        </div>
-        
+          <ion-button id="boton">Guardar</ion-button> 
+      </ion-content>
 
-    </div>
-    <div class="boton">
+      
 
-        <button onclick="boton_login()" id="login">Login</button>
-        <button onclick="boton_registrarme()" id="reg">Registrarme</button>
-
-
-        
-        
-
-    </div>
-    <div id="agr_parrafo">
-        
-        
-
-
-    </div>
 </body>
 </html>
