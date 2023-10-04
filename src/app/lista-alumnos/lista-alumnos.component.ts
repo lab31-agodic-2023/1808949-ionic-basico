@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaAlumnosComponent  implements OnInit {
 
+  public actionSheetButtons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: {
+        action: 'delete',
+      },
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      },
+    },
+  ];
+
   alumno:any = ["Carlos", "Ximena", "Alberto", "Eduardo", "Baraba", "Georgina", "Kevin"];
   constructor() { }
 
   ngOnInit() {}
-
+  
 }
